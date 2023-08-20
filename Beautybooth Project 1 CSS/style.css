@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--p-font);
+}
+
+:root {
+    --head-font: arsenal, sans-serif;
+    --p-font: roboto, sans-serif;
+}
+
+.container {
+    max-width: 1800px;
+    padding: 0px 10rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* top most section start */
+.top-most-most{
+    background-color: #fff;
+    height:150px;
+    position: sticky;
+    top:0;
+}
+#top-most-section {
+    background-color: rgb(255, 33, 109);
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+    font-family: var(--p-font);
+    padding-bottom: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* top most section end */
+
+
+/* Navbar part one start  */
+
+.row-part-one {
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.part-one-searchbar {
+    margin-left: 13%;
+    margin-right: 10%;
+}
+
+.search-bar {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    height: 38px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 25px;
+    transition: width 2s ease-in-out;
+    /* box-shadow: 0 10px 30px #0190bf; */
+}
+
+.search-bar:hover {
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input {
+    border: none;
+    height: 100%;
+    width: calc(100% - 60px);
+    border-radius: 25px;
+    text-transform: capitalize;
+    line-height: 22px;
+    padding: 7px 15px 7px 20px;
+    color: #787878;
+    background-color: #f6f6f6;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    width: 60px;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-bar button svg {
+    stroke: black;
+}
+
+.header-icon {
+    font-size: 150%;
+    display: flex;
+    justify-content: end;
+}
+
+.header-icon a {
+    margin-left: 20px;
+}
+
+/* Navbar part one end  */
+
+/* Navbar Part Two start  */
+
+.phone-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-navbar button {
+    margin-left: 0%;
+    border: none;
+    width: 60px;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Navbar Part Two end  */
+
+
+/* Menu List start  */
+.header-menu{
+    margin-top:1rem;
+}
+.ul-menu {
+    /* display: grid;
+    grid-template-columns: repeat(9, auto);
+    justify-content: space-between;
+    list-style: none; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.a-menu {
+    /* text-decoration: none;
+    display: inline-block;
+    font-size: 14px; */
+}
+
+.text-menu {
+    color: #222;
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size:14px;
+    white-space:nowrap;
+    /* display: inline-block;
+    position: relative;
+    bottom: 2px; */
+}
+
+.li-justify {
+    /* padding-top: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .3rem;
+    text-align: center;
+    overflow: hidden; */
+}
+.a-menu div{
+    display: flex;
+    justify-content: center;
+    gap:3px;
+    position:relative;
+    top:2px;
+}
+.ul-menu .li-menu {
+    background-color:rgba(128, 128, 128, 0.055);
+    border-radius: 50px;
+    padding:6px 16px;
+}
+
+.ul-menu .li-menu:hover {
+    background-color: rgba(128, 128, 128, 0.151);
+    ;
+}
+
+.text-menu-one {
+    /* position: relative;
+    bottom: 3px; */
+}
+
+.text-menu-two {
+    margin-left: 3px;
+}
+
+.menu-icone {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu List End */
+
+/* Hero Section Start  */
+
+.hero img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Rounded Card Start  */
+
+.row-rounded-card {
+    display: grid;
+    grid-template-columns: repeat(8, 11%);
+    justify-content: space-between;
+
+}
+
+.img-text-cat p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    font-family: var(--p-font);
+}
+
+.img-text-cat p:hover {
+    text-decoration: underline;
+}
+
+.rounded-border-fixed {
+    border: 1px solid black;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: rgb(245, 245, 245);
+    transition: border .1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-border-fixed:hover {
+    border: 1.8px solid black;
+}
+
+.iner img {
+    transition: all 0.5s ease;
+}
+
+.iner:hover img {
+    transform: scale(1.2);
+}
+
+.imer img {
+    transition: all 0.5s ease;
+}
+
+.imer:hover img {
+    transform: scale(1.1);
+}
+
+#text-alignment-rounded {
+    text-align: center;
+    margin-right: 22px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-family: var(--p-font);
+    line-height: 1.3;
+    font-size: 12px !important;
+    height: 36px;
+}
+
+
+
+/* Rounded Card End */
+
+/* Main card Start  */
+
+
+.row-main-card {
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    justify-content: space-between;
+}
+
+#vitamin-border-control {
+    /* border:1px solid white; */
+    padding: 8px 14px 16px;
+    box-shadow: 2px 2px 8px #00000012;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.vitamin-border-control-1 {
+    height: 100%;
+}
+
+.text-polish1 {
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    font-family: var(--p-font);
+    color: #d18c5e;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.text-polish2 {
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size: .9rem;
+    color: #000;
+    min-height: 34px;
+    line-height: 17px;
+    overflow: hidden;
+    margin-top: 3px;
+    display: block;
+}
+
+.text-polish3 {
+    font-weight: 700;
+    text-align: left;
+    font-family: var(--p-font);
+    font-size: 1.1rem;
+    color: #000;
+    margin-top: 3px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Main Card End  */
+
+/* Vitamin C Card Start  */
+
+.row-vitamin-card {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 2%;
+    /* justify-content: space-between; */
+}
+
+#button_vitamin {
+    background-color: black;
+    color: white;
+    z-index: 999;
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+    border: 1px solid black;
+    border-style: none;
+    padding: .6rem;
+    border-radius: 30px;
+}
+
+#button_vitamin:hover {
+    background-color: rgb(255, 33, 109);
+}
+
+/* .gradient-div{
+    position: relative;
+    width:100%;
+    height: 10%;
+    top:83%;
+    border: 1px solid red;
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.062);
+    background-image: linear-gradient( transparent , rgb(255, 255, 255)90% );
+} */
+.row-vitamin-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 38%);
+    justify-content: space-between;
+    grid-gap: 10px;
+    margin-top: -1rem;
+}
+
+.text-polish11 {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    font-family: var(--p-font);
+    color: #d18c5e;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.text-polish22 {
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    /* min-height: 34px;
+    line-height: 15px; */
+    overflow: hidden;
+    margin-top: 3px;
+    display: block;
+}
+
+.text-polish33 {
+    font-weight: 700;
+    text-align: left;
+    font-family: var(--p-font);
+    font-size: 14px;
+    color: #000;
+    margin-top: 3px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/* Vitamin C Card End */
+
+/* Brands Start  */
+
+.row-brands {
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.border-brands {
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    border-radius: .5rem;
+}
+
+
+
+/* Brands End */
+
+/* Footer er ager part Start  */
+
+.row-footer-pre-part {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+}
+
+.row-footer-pre-part-section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+}
+
+.border-cus-pre {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.row-pink-cards {
+    display: grid;
+    grid-template-columns: 20% 78%;
+    justify-content: space-between;
+}
+
+/* .text-polish-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: start;
+} */
+
+/* Footer er ager part end  */
+
+/* Footer Start  */
+
+
+.footer-section {
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+}
+
+.row-footer-part {
+    display: grid;
+    grid-template-columns: 23% 25% 31%;
+    justify-content: space-between;
+}
+
+.row-footer-part-sec1 {
+    display: grid;
+    grid-template-columns: repeat(1, 135%);
+    justify-content: space-between;
+}
+
+.row-footer-text {
+    display: grid;
+    grid-template-columns: repeat(2, 65%);
+}
+
+#icon-footer {
+    background-color: rgb(221, 221, 221);
+    border-radius: 7px;
+    margin-top: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 13%);
+    justify-content: center;
+    border: 1px solid;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.number-align {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.border-footer-input {
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 7px;
+}
+
+.border-footer-input:active {
+    border: 1px solid blue;
+}
+
+.custom-email-style {
+    width: 95%;
+    padding: .9rem;
+}
+
+.input-adjustment {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    padding: 5px;
+}
+
+
+
+
+
+
+.search-bar1 {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    height: 50px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    transition: width 2s ease-in-out;
+}
+
+/* .search-bar1:hover{
+    border:1px solid black;
+    transition: all 0.3s ease-in-out;
+} */
+.search-bar1 input {
+    border: none;
+    height: 100%;
+    width: calc(100% - 60px);
+    border-radius: 25px;
+    line-height: 22px;
+    padding: 7px 15px 7px 20px;
+    color: #787878;
+    background-color: #f6f6f6;
+}
+
+.search-bar1 input:focus {
+    outline: none;
+}
+
+.search-bar1 button {
+    border: none;
+    width: 60px;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-bar1 button svg {
+    stroke: black;
+}
+
+.footer-button-mkv {
+    position: relative;
+}
+
+.footer-button-mkv input {
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    padding-left: 16px;
+    padding-right: 52px;
+}
+
+.footer-button-mkv input:focus {
+    border: 1px solid blue;
+    /* transition: border 0.1s cubic-bezier(0.165, 0.84, 0.44, 1); */
+}
+
+.footer-button-mkv button {
+    background-color: #ff216d;
+    border: none;
+    outline: none;
+    padding: 10px 8px 9px 14px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border-radius: 6px;
+}
+
+.footer-button-mkv img {
+    width: 21px;
+    height: 18px;
+    margin-top: -1px;
+}
+
+/* Footer End  */
+
+.hr {
+    margin-top: 0.5rem;
+    border: 0.01px solid rgba(128, 128, 128, 0.116);
+    /* border-color: rgba(128, 128, 128, 0.075); */
+}
+
+/* Brand Page Styling Start  */
+.brands-brands {
+    font-family: var(--head-font);
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+brands-cont {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.symbol-list {
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    padding: 1.2rem 3rem;
+    margin-top: 2rem;
+}
+.brands-top-most-scrolling{
+    width:100%;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 150px;
+}
+.brands-top-most {
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 150px;
+}
+
+.symbol-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.symbol-list li a {
+    font-size: 0.93rem;
+    font-family: var(--p-font);
+}
+#brands-bordered{
+    border:1px solid red;
+}
+.brands-bordered {
+    width: 100%;
+    border: 1px solid gray;
+    background-color: rgb(245, 244, 247);
+    padding: 0.9rem;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.brands-texts {
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #222;
+}
+
+.brands-texts:hover {
+    color: #FF216D;
+    text-decoration: underline;
+}
+
+/* .brands-ul {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.brands-li {
+    width: 50%;
+} */
+
+.brands-li a {
+    color: #222;
+    font-weight: 400;
+    width: 100%;
+}
+
+.brands-cont ul li {
+    margin-bottom: 0.55rem;
+}
+
+.brands-cont ul li a {
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #222;
+}
+
+.brands-cont ul li a:hover {
+    color: #FF216D;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width:576px) {
+    .brands-ul {
+        font-family: Roboto, sans-serif;
+        width: 100%;
+        padding-left: 2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width:575px) {
+    .brands-ul {
+        font-family: Roboto, sans-serif;
+        width: 100%;
+        padding-left: 2rem;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+
+/* Brand Page Styling End */
+
+
+
+
+/* Navbar Part One Media Start  */
+
+@media only screen and (max-width:767px) and (min-width:100px) {
+    .row-part-one {
+        display: none;
+    }
+}
+
+/* Navbar Part One Media End */
+
+
+/* Navbar Part Two Media Start  */
+
+@media only screen and (max-width:2200px) and (min-width:768px) {
+    .phone-navbar {
+        display: none;
+    }
+}
+
+/* Navbar Part Two Media End */
+
+
+
+
+/* Menu Media Start  */
+
+@media only screen and (max-width:1010px) and (min-width:100px) {
+    .header-menu {
+        display: none;
+    }
+}
+
+/* Menu Media End  */
+
+
+
+
+/* Rounded Card Media Start  */
+
+@media only screen and (max-width:1200px) and (min-width:992px) {
+    .row-rounded-card {
+        display: grid;
+        grid-template-columns: repeat(6, 18%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+    .row-rounded-card {
+        display: grid;
+        grid-template-columns: repeat(5, 15%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width:576px) {
+    .row-rounded-card {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:575px) and (min-width:200px) {
+    .row-rounded-card {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Rounded Card Media End */
+
+/* Main Card Media Start  */
+
+@media only screen and (max-width:1200px) and (min-width:850px) {
+    .row-main-card {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:849px) and (min-width:700px) {
+    .row-main-card {
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:699px) and (min-width:450px) {
+    .row-main-card {
+        display: grid;
+        grid-template-columns: repeat(2, 42%);
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width:449px) and (min-width:390px) {
+    .row-main-card {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:389px) and (min-width:100px) {
+    .row-main-card {
+        display: grid;
+        grid-template-columns: repeat(1, 85%);
+        justify-content: space-center;
+    }
+}
+
+/* Main Card Media End  */
+
+
+/* Vitamin C card media start  */
+
+
+@media only screen and (max-width:990px) and (min-width:200px) {
+    .row-vitamin-card {
+        display: grid;
+        grid-template-columns: 95%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:990px) and (min-width:576px) {
+    .row-vitamin-card-section {
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        justify-content: space-between;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:575px) and (min-width:200px) {
+    .row-vitamin-card-section {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+/* Vitamin C card media end  */
+
+
+/* footer er ager part media start  */
+
+@media only screen and (max-width:1200px) and (min-width:200px) {
+    .row-footer-pre-part {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:576px) and (min-width:200px) {
+    .row-footer-pre-part-section2 {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+    }
+}
+
+
+/* footer er ager part media end  */
+
+/* footer media start  */
+
+@media only screen and (max-width:992px) and (min-width:200px) {
+    .row-footer-part {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        grid-row-gap: 1rem;
+    }
+
+    .footer-section {
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+    }
+
+    .row-footer-part-sec1 {
+        display: grid;
+        grid-template-columns: repeat(1, 95%);
+        justify-content: space-between;
+    }
+}
+
+
+
+
+/* footer media end  */
